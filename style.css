@@ -1,0 +1,38 @@
+body{
+    background-color: aquamarine;
+    size: 10/16 px;
+}
+
+.gameboard{
+    width: 60%;
+    height: 60%;
+    margin-left: 20%;
+    display: flex;
+    flex-flow: column;
+    justify-content:stretch;
+    font-size: 3rem;
+
+}
+.row{
+    display: flex;
+    
+    justify-content: space-evenly;
+    
+}
+.cell{
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+    background-color: coral;
+    text-align: center;
+    width:33%;
+    border-width: 1rem;
+    border-radius: 3rem;
+    border-color: darkblue;
+    border-style:inset;
+
+}
+.cell:hover{
+    background-color: greenyellow;
+}
+
+
