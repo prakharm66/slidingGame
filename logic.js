@@ -5,7 +5,7 @@ var flag=0;
 function start(){
   document.getElementById("testing").innerHTML="Game has started now"
   flag=1;
-  checkboard();
+ var y= checkboard();
 }
 
 const Correct=[]
@@ -27,20 +27,23 @@ function checktile(tileid){
   if (idclass==tile.className)
   {
     document.getElementById(tileid).style.borderColor="green";
+    return 1;
   }else 
-    document.getElementById(tileid).style.borderColor="red";
+   { document.getElementById(tileid).style.borderColor="red";
+    return 0;} 
   
 }
 
 function checkboard()
-{
+{ var count=0;
   for (i=1;i<5;i++)
   {
     for (j=1;j<5;j++)
     {
-      checktile("cell"+i+j);
+     count+= checktile("cell"+i+j);
     }
   }
+  if (count==16) alert("congo you won")
 }
 
 
@@ -52,7 +55,7 @@ function swapTiles(cell1,cell2) {
   }
 
 function clickTile(row,column) {
-  if (flag==1) checkboard(); 
+  if (flag==1) var x=checkboard(); 
   var cell = document.getElementById("cell"+row+column);
   var tile = cell.className;
   if (tile!="cell tile16") { 
