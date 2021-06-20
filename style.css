@@ -1,12 +1,16 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
     background-color: aquamarine;
-    size: 10/16 px;
+    size: 62.5%;
 }
 
 .gameboard{
+    
     width: 60%;
-    height: 60%;
-    margin-left: 20%;
+
+   margin-left: 15%; 
     display: flex;
     flex-flow: column;
     justify-content:stretch;
@@ -20,19 +24,100 @@ body{
     
 }
 .cell{
-    padding-top: 1.5rem;
-    padding-bottom: 2rem;
-    background-color: coral;
+    padding: 10% 10% 10% 10%;
     text-align: center;
-    width:33%;
-    border-width: 1rem;
+    width:25%;
+    height:25%;
+    border-width: 0.5rem;
     border-radius: 3rem;
     border-color: darkblue;
     border-style:inset;
 
 }
 .cell:hover{
-    background-color: greenyellow;
+   /* background-color: greenyellow; */
+   transform:scale(1.1);
 }
-
+.tile1{
+    background-image:url("tiles/tile1.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+.tile2{
+    background-image:url("tiles/tile2.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+.tile3{
+    background-image:url("tiles/tile3.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+.tile4{
+    background-image:url("tiles/tile4.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+.tile5{
+    background-image:url("tiles/tile5.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+.tile6{
+    background-image:url("tiles/tile6.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+.tile7{
+    background-image:url("tiles/tile7.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+.tile8{
+    background-image:url("tiles/tile8.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+.tile9{
+    background-image:url("tiles/tile9.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+.tile10{
+    background-image:url("tiles/tile10.png")
+    ;background-size:cover;
+    background-repeat: no-repeat;
+}
+.tile13{
+    background-image:url("tiles/tile13.png")
+    ;background-size:cover;
+    background-repeat: no-repeat;
+}
+.tile14{
+    background-image:url("tiles/tile14.png")
+    ;background-size:cover;
+    background-repeat: no-repeat;
+}
+.tile15{
+    background-image:url("tiles/tile15.png")
+    ;background-size:cover;
+    background-repeat: no-repeat;
+}
+.tile11{
+    background-image:url("tiles/tile11.png")
+    ;background-size:cover;
+    background-repeat: no-repeat;
+}
+.tile12{
+    background-image:url("tiles/tile12.png")
+    ;background-size:cover;
+    background-repeat: no-repeat;
+}
+.tile16{
+    background-image:none;
+    border-width: 0;
+}
+div[class^='tile']{
+    background-repeat: no-repeat;
+}
 
