@@ -25,6 +25,7 @@ a{
     border-style: solid;
     flex:1;
     background-color: cyan;
+    box-shadow: 0.3rem 0.3rem grey;
    
 }
 #shfl{
@@ -55,6 +56,7 @@ a{
     vertical-align: bottom;
     width: 70%;
     margin-left: 15%;
+    box-shadow: 0.3rem 0.3rem grey;
 }
 
 
@@ -200,6 +202,9 @@ a{
         margin-left: 5%;
     }
     #testing,#board{
-        font-size:medium;}
+        font-size:1.2rem;}
+    .btn:hover{
+        transform:none;
+    }
     
 }
