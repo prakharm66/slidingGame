@@ -13,12 +13,22 @@
    
 </head>
 
-<body>
+<body >
    <p id ="p1">hello world<br>
     i am prakhar<br>
     this is a sliding game</p>
 
-    <section>
+    <section>   
+        <div class="topbar">
+           <div class="btn " id="shfl" onclick="shuffle();">shuffle game</div>
+           <div class="btn" id="start" onclick="start();">start</div>
+           <div class="moves" id="moves">moves </div>
+           <div class="time ">time</div>
+           <div class="btn"><a href="index.html">solved puzzle</a></div>
+           <br>
+           
+        </div>
+        
         <div class="gameboard">
             <div class="row">
                 <div id="cell11" class="cell tile1" onclick="clickTile(1,1);">  </div>
@@ -45,11 +55,10 @@
                 <div id="cell44" class="cell tile16" onclick="clickTile(4,4);">   </div>
             </div>
         </div>
-
-        <button onclick="s();">shuffle game</button>
-        <button ><a href="index.html">solved puzzle</a></button>
-        <button onclick="start();">start</button><br>
-        <textarea id="testing">click shuffle then start</textarea>
+        <br><br>
+        <textarea readonly id="testing" class="display">Click shuffle then start</textarea>
+       <br>
+        <textarea readonly id="board" class="display"> Your Performances</textarea>
         
     </section>
 
