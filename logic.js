@@ -3,12 +3,14 @@ p.innerHTML="JS is working";
 var flag=0;
 var totMoves=0;
 var time=0;
+document.getElementById('start').style.pointerEvents = 'none';
 
 function start(){
   document.getElementById("shfl").style.backgroundColor="cyan";
   document.getElementById("start").style.backgroundColor="cyan";
   document.getElementById("testing").innerHTML="Game has started now"
   flag=1;
+  document.getElementById('start').style.pointerEvents = 'none';
  var y= checkboard();
  starttimer();
  
@@ -114,6 +116,7 @@ function clickTile(row,column) {
 function shuffle(){
   flag=0;
   totMoves=0;
+  document.getElementById('start').style.pointerEvents = 'auto';
   document.getElementById("shfl").style.backgroundColor="orange";
   document.getElementById("testing").innerHTML="click start to play";
   document.getElementById("start").style.backgroundColor="#00DD00";
