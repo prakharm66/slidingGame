@@ -199,4 +199,7 @@ a{
         width: 90%;
         margin-left: 5%;
     }
+    #testing,#board{
+        font-size:medium;}
+    
 }
