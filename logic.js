@@ -41,19 +41,19 @@ function shuffle(){
 function board(){
    var pboard=document.getElementById("board");
    var prev=pboard.value;
-   prev=prev+("\nMoves - "+totMoves+" , Time - "+time);
+   prev=prev+("\nMoves - "+totMoves+" , Time - "+time + " s");
    pboard.value=prev;
  }
 
 //printing the time taken
 function starttimer(){
   time=0;
-  document.getElementsByClassName("time")[0].innerHTML="time "+time;
+  document.getElementsByClassName("time")[0].innerHTML="time "+time+"s";
 }
 
 setInterval(() => {
   if (flag==1 )time+=1;
-  document.getElementsByClassName("time")[0].innerHTML="time "+time;
+  document.getElementsByClassName("time")[0].innerHTML="time "+time+"s";
 }, 1000);
 
 
@@ -88,7 +88,7 @@ function checkboard()
   { alert("congo you won in "+totMoves+" moves in "+time+" seconds");
   document.getElementsByClassName("time")[0].innerHTML="time 0"; 
   document.getElementsByClassName("moves")[0].innerHTML="moves 0";
-  document.getElementById("testing").innerHTML="Great !! you won , try again to improve yourscore";
+  document.getElementById("testing").innerHTML="Great !! you won , try again to improve yourscore , click shuffle";
   document.getElementById("shfl").style.backgroundColor="#00DD00";
   board();
   time=0;totMoves=0; flag=0;
