@@ -202,7 +202,9 @@ a{
         margin-left: 5%;
     }
     #testing,#board{
-        font-size:1.2rem;}
+        font-size:1.2rem;
+        width:80%;
+        margin-left:10%}
     .btn:hover{
         transform:none;
     }
