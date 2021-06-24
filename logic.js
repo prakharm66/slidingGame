@@ -41,7 +41,7 @@ function shuffle(){
 function board(){
    var pboard=document.getElementById("board");
    var prev=pboard.value;
-   prev=prev+("\nMoves - "+totMoves+" , Time - "+time + " s");
+   prev=prev+("\nMoves- "+totMoves+" , Time- "+time + " s");
    pboard.value=prev;
  }
 
